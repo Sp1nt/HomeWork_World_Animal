@@ -11,6 +11,7 @@ class Lion : public Carnivore
 {
 public:
 	Lion(const char*, int, Continent*, AnimalWorld*);
+	//initiates a specific animal to eat
 	void eatHerb(Herbivore*);
 	void Print() const;
 

@@ -9,6 +9,7 @@ class Wildebeest :public Herbivore
 {
 public:
     Wildebeest(const char* name, double weight, bool isLife, Continent* cont, AnimalWorld* an);
+    //initiates a specific animal to eat
     void eatGrass();
     void Print() const;
     ~Wildebeest();

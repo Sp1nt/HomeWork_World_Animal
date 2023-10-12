@@ -12,6 +12,8 @@ protected:
 	Continent* cont;
 public:
 	Carnivore();
+
+	//pure virtual methods
 	virtual void eatHerb(Herbivore*) = 0;
 	virtual ~Carnivore() = 0;
 	virtual void Print() const = 0;
