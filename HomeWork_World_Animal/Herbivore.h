@@ -15,11 +15,13 @@ public:
 	virtual void eatGrass() = 0;
 	virtual ~Herbivore() = 0;
 	virtual void Print()const = 0;
+	virtual char* GetContinent() const = 0;
 
 	//accessories
 	double GetWeight() const;
 	char* GetName() const;
 	bool GetIsLife() const;
 	void SetIsLife(bool);
+
 };
 

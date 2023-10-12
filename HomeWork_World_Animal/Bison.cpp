@@ -32,6 +32,11 @@ void Bison::Print() const
     cout << "Is alive? " << boolalpha << isLife << endl;
 }
 
+char* Bison::GetContinent() const
+{
+    return cont->GetContinent();
+}
+
 
 Bison::~Bison()
 {

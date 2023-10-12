@@ -13,16 +13,22 @@ Wolf::Wolf(const char* n, int p, Continent* c, AnimalWorld* an)
 
 void Wolf::eatHerb(Herbivore* herbivore)
 {
-    if (power > herbivore->GetWeight())
-    {
-        power += 10;
-        cout << "Wolf is eating " << herbivore->GetName() << ". Power increased by 10. New power: " << power << endl;
-        herbivore->SetIsLife(false);
+    if (cont->GetContinent() != herbivore->GetContinent()) {
+        cout << "This animals in different country!" << endl;
+        return;
     }
-    else
     {
-        power -= 10;
-        cout << "Wolf is trying to eat " << herbivore->GetName() << ", but it's too strong. Power decreased by 10. New power: " << power << endl;
+        if (power > herbivore->GetWeight())
+        {
+            power += 10;
+            cout << "Wolf is eating " << herbivore->GetName() << ". Power increased by 10. New power: " << power << endl;
+            herbivore->SetIsLife(false);
+        }
+        else
+        {
+            power -= 10;
+            cout << "Wolf is trying to eat " << herbivore->GetName() << ", but it's too strong. Power decreased by 10. New power: " << power << endl;
+        }
     }
 }
 

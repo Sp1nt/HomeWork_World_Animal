@@ -13,5 +13,6 @@ public:
     void eatGrass();
     void Print() const;
     ~Wildebeest();
+    char* GetContinent() const;
 };
 

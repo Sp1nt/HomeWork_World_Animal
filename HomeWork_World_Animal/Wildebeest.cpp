@@ -36,3 +36,8 @@ Wildebeest::~Wildebeest()
 {
     delete name;
 }
+
+char* Wildebeest::GetContinent() const
+{
+    return cont->GetContinent();
+}

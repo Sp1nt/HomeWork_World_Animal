@@ -14,5 +14,7 @@ public:
     void eatGrass();
     void Print() const;
 
+    char* GetContinent() const;
+
     ~Bison();
 };
